@@ -9,8 +9,7 @@ import (
 func main() {
 	http.HandleFunc("/ping", func(w http.ResponseWriter, r *http.Request) {
 		jsonResponse(w, map[string]string{
-			"status":  "ok",
-			"service": "1",
+			"service": "service1",
 		})
 	})
 
