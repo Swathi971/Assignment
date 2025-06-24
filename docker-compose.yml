@@ -8,7 +8,7 @@ services:
     ports:
       - "8001:8001"
     healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:8001/ping"]
+      test: ["CMD", "curl", "-f", "http://54.175.46.163:8001/ping"]
       interval: 10s
       timeout: 5s
       retries: 3
@@ -20,7 +20,7 @@ services:
     ports:
       - "8002:8002"
     healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:8002/ping"]
+      test: ["CMD", "curl", "-f", "http://54.175.46.163:8002/ping"]
       interval: 10s
       timeout: 5s
       retries: 3
