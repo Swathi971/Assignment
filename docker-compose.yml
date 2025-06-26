@@ -34,4 +34,6 @@ services:
     depends_on:
       - service_1
       - service_2
+    volumes:
+      - ./nginx/logs:/var/log/nginx
 
